@@ -10,7 +10,7 @@ auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 
 def get_data():
-    response = requests.get('https://apitransporte.buenosaires.gob.ar/ecobici/gbfs/stationStatus?client_id=fc443ae918e146efb1c663885102f6e4&client_secret=7d449B41Adc74B6690BafBA6DaA268A7')
+    response = requests.get(config.url)
     response = response.json()
 
     bloq = 0
