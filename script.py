@@ -1,9 +1,10 @@
 import requests, tweepy, time, config
+from os import environ
 
-consumer_key = config.consumer_key
-consumer_secret = config.consumer_secret 
-access_token = config.access_token
-access_secret = config.access_secret
+consumer_key = environ[consumer_key]
+consumer_secret = environ[consumer_secret] 
+access_token = environ[access_token]
+access_secret = environ[access_secret]
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)    
 auth.set_access_token(access_token, access_secret)
