@@ -1,5 +1,2 @@
 tweepy
-flask
 requests
-pandas
-matplotlib
