@@ -32,7 +32,6 @@ def main():
             print(bloq)
             print(disp)
             API.update_status(f"Disponibles: {disp} Bloquedas: {bloq}")
-            save_data(disp, bloq)
             time.sleep(INTERVAL) #waits 15 minutes
         except KeyboardInterrupt:
             exit()
