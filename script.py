@@ -1,4 +1,4 @@
-import time, config, datetime, csv, os
+import time, datetime, csv, os
 import requests, tweepy
 
 #   TWITTER API
